@@ -1,0 +1,168 @@
+/* Box-sizing border-box */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* Some default styles to make each box visible */
+.box {
+  color:white;
+  font-size: 100px;
+  text-align: center;
+  text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+  padding:10px;
+}
+
+/* Colors for each box */
+.box1 { background:#1abc9c;}
+.box2 { background:#3498db;}
+.box3 { background:#9b59b6;}
+.box4 { background:#34495e;}
+.box5 { background:#f1c40f;}
+.box6 { background:#e67e22;}
+.box7 { background:#e74c3c;}
+.box8 { background:#bdc3c7;}
+.box9 { background:#2ecc71;}
+.box10 { background:#16a085;}
+
+
+/* We start writing out flexbox here. The above is just page setup */
+.container {
+  display: flex;
+  /*
+   row = left to right
+   column = top to bottom
+   row-reverse
+   column-reverse
+  */
+  
+  flex-direction: row;
+  
+  /* display: block, inline-block, inline 
+     wrap, nowrap, wrap-reverse
+  */
+  
+  flex-wrap: wrap;
+  height: 1005px;
+  border: 10px solid goldenrod;
+  justify-content: center;
+  
+  /*justify-content takes any extra space and distrubutes it in a certain way ;
+    justify-content is tied to your direction
+    justify-content is left to right
+    
+  
+  
+  /* align-items is top to bottom */
+  
+  align-content: center
+  
+}
+
+.box {
+  width: 300px;
+  flex-grow: 1;
+  width: 300px;
+  
+}
+
+/*
+.section-class {
+  background: grey;
+  height: 400px;
+  margin-bottom: 8px;
+}
+
+.class-1 {
+  position: relative;
+  top: 50px;
+  right: 50px;
+  background: blue;
+}
+
+/* Relative changes positoning relative to where the element starts*/
+
+/*
+.class-2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* Absoulute changes positioning starting from the edge of the screen */
+
+
+
+
+
+
+
+/* for Margin and Padding--1 number is all directions, 2 numbers is top bottom, left right, 4 numbers is all four clockwise
+inline elements cannot be changed on Margin top or bottom or Width
+
+block level elements - <p> <div> <h1-h6>
+inline - <span> <img>
+
+Fixed Width: px, good for knowing exactly how it'll look like on a specific screen or device
+
+Elastic- em is proportional to Font size
+Fluid- %
+
+Height will usually alwasy be fixed or percentage, normally at 16px
+
+*/
+
+/*
+.class-1 {
+  background: cadetblue;
+  width: 400px;
+  margin: 0 auto;
+  color: white;
+  
+}
+
+
+/* Media Queries
+
+@media (max-width: 768px) {
+  
+.class-1 {
+  background: mistyrose;
+}
+  
+  
+}
+
+*/
+
+/*can also combine media queries to provide min and max requirements 
+
+ie. @media (min-width: 400px) and @media (max-width: 768px) */
+
+/* Mobile First */
+
+.class-1 {
+  background: red;
+  width: 50%
+}
+
+@media (min-width: 768px) {
+  .class-1 { background: blue
+}
+
+}
+
+/* Mobile First CSS, write code to priortize mobile and then create media queries to conform to tablets and desktop ie.
+class-1 {
+  background: red
+  width: 50%
+}
+
+@media (min-width: 768px) {
+  .class-1{ background: blue
+}
+
+}
+
+*/
+
+
+*/
